@@ -6,7 +6,15 @@
 // and log the output to make sure it works 
 //(e.g. "The greater number of 5 and 10 is 10")
 
+function greaterNum(num1, num2) {
+    if (num1 > num2) {
+        return num1;
+    } else {
+        return num2;
+    }
+}
 
+console.log(greaterNum(5, 10));
 
 
 
@@ -18,6 +26,16 @@
 // 3 languages. It should default to returning English
 //Call that function for each of the supported languages and log the 
 // resultto make sure it works
+
+function helloWorld(spake) {
+    if (spake == 'arabic') {
+        return 'marhbaba beal3ame';
+    } else if (spake == 'spanish') {
+        return 'hola monda';
+    } else {
+        return 'Hello, World';
+    }
+}
 
 
 
@@ -31,7 +49,19 @@
 //returns a grade for the score, either "A", "B", "C", "D", or "F"
 //Call that function for a few different scores and log the result 
 //to make sure it works
-
+function assignGrade(grade) {
+    if (grade > 90) {
+        return 'A';
+    } else if (grade > 80) {
+        return 'B';
+    } else if (grade > 70) {
+        return 'C';
+    } else if (grade> 65) {
+        return 'D';
+    } else {
+        return 'F';
+    }
+}
 
 
 
@@ -47,3 +77,20 @@
 //call that function for a few different scores
 //and log the result to make sure it works
 //Bonus: Make it handle a few collective nouns like "sheep" and "geese"
+  
+
+function pluralize(noun, num){
+    if (num!=1 && noun!='sheep' && noun!='geese'){
+        return num +" " + noun +'s'}
+        else{
+            return num + ' ' + noun;
+
+        }
+    }
+
+
+
+
+
+
+
