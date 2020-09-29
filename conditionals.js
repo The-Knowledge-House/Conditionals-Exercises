@@ -6,8 +6,15 @@
 // and log the output to make sure it works 
 //(e.g. "The greater number of 5 and 10 is 10")
 
+function greaterNum(a, b) {
+    if (a > b) {
+        console.log(`The greater number of ${a} and ${b} is ${a}`)
+    } else if (b > a) {
+        console.log(`The greater number of ${a} and ${b} is ${b}`)
+    }
+}
 
-
+greaterNum(3, 5)
 
 
 
@@ -19,7 +26,17 @@
 //Call that function for each of the supported languages and log the 
 // resultto make sure it works
 
-
+function helloWorld(lang) {
+    if (lang === "es") {
+        console.log("Hola Mundo");
+    } else if (lang === "de") {
+        console.log("");
+    } else if (lang === "en") {
+        console.log("Hallo Wereld");
+    } else if (lang === "en") {
+        console.log("Hello World");
+    }
+}
 
 
 
@@ -32,8 +49,38 @@
 //Call that function for a few different scores and log the result 
 //to make sure it works
 
+let grades = Math.floor(Math.random() * 100);
+/* mathf.floor(math.random) selects random interger*/
+console.log(grades);
+/*print out grades with log */
+switch (grades) {
+    case grades > 95:
+        console.log("A+");
+        break;
+    case grades > 90:
+        console.log("A");
+        break;
+    case grades > 84:
+        console.log("B+");
+        break;
+    case grades > 76:
+        console.log("C+");
+        break;
+    case grades > 70:
+        console.log("C");
+        break;
+    case grades > 67:
+        console.log("D+");
+        break;
+    case grades > 64:
+        console.log("D");
+        break;
+    case grades > 60:
+    default:
+        console.log("F");
+}
 
-
+/*defualt is f nothing left to plug into */
 
 
 
@@ -47,3 +94,14 @@
 //call that function for a few different scores
 //and log the result to make sure it works
 //Bonus: Make it handle a few collective nouns like "sheep" and "geese"
+
+function pluralize(noun, number) {
+    if (number != 1 && noun != 'sheep' && noun != 'geese') {
+        return number + ' ' + noun + 's';
+    } else {
+        return number + ' ' + noun;
+    }
+}
+console.log('I have ' + pluralize('cat', 0));
+console.log('I have ' + pluralize('cat', 1));
+console.log('I have ' + pluralize('cat', 2));
