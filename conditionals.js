@@ -49,13 +49,3 @@ function helloWord(lang) {
 //call that function for a few different scores
 //and log the result to make sure it works
 //Bonus: Make it handle a few collective nouns like "sheep" and "geese"
-
-function pluralize(noun, num) {
-  if (num != 1 && noun != "sheep" && noun != "geese") {
-    return num + " " + noun + "s";
-  } else {
-    return num + " " + noun;
-  }
-}
-
-console.log("I have " + pluralize("cat", 0));
