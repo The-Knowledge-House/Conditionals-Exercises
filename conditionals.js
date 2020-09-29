@@ -41,6 +41,21 @@ function helloWord(lang) {
 //returns a grade for the score, either "A", "B", "C", "D", or "F"
 //Call that function for a few different scores and log the result
 //to make sure it works
+function assignGrade(grade) {
+  switch (grade) {
+    case "A":
+      console.log("A");
+      break;
+    case "B":
+      console.log("B");
+      break;
+    case "C":
+      console.log("C");
+      break;
+    default:
+      console.log("D");
+  }
+}
 
 //Exercise #4
 //Write a function named pluralize that:
