@@ -5,7 +5,14 @@
 // Call that function 2 times with different number pairs
 // and log the output to make sure it works 
 //(e.g. "The greater number of 5 and 10 is 10")
-
+function greaterNum(num1, num2) {
+  if (num1 > num2) {
+    return num1;
+  } else {
+    return num2;
+  }
+}
+console.log(greaterNum(5, 10));
 
 
 
@@ -18,7 +25,18 @@
 // 3 languages. It should default to returning English
 //Call that function for each of the supported languages and log the 
 // resultto make sure it works
-
+function helloWorld(lang) {
+  if (lang == 'fr') {
+    return 'Bonjour tout le monde';
+  } else if (lang == 'es') {
+    return 'Hola, Mundo';
+  } else {
+    return 'Hello, World';
+  }
+}
+console.log(helloWorld('en'));
+console.log(helloWorld('fr'));
+console.log(helloWorld('es'));
 
 
 
@@ -31,7 +49,21 @@
 //returns a grade for the score, either "A", "B", "C", "D", or "F"
 //Call that function for a few different scores and log the result 
 //to make sure it works
-
+function assignGrade(score) {
+  if (score > 90) {
+    return 'A';
+  } else if (score > 80) {
+    return 'B';
+  } else if (score > 70) {
+    return 'C';
+  } else if (score > 65) {
+    return 'D';
+  } else {
+    return 'F';
+  }
+}
+console.log('You got a ' + assignGrade(95));
+console.log('You got a ' + assignGrade(65));
 
 
 
@@ -47,3 +79,13 @@
 //call that function for a few different scores
 //and log the result to make sure it works
 //Bonus: Make it handle a few collective nouns like "sheep" and "geese"
+function pluralize(noun, number) {
+  if (number != 1 && noun != 'sheep' && noun != 'geese') {
+    return number + ' ' + noun + 's';
+  } else {
+    return number + ' ' + noun;
+  }
+}
+console.log('I have ' + pluralize('cat', 0));
+console.log('I have ' + pluralize('cat', 1));
+console.log('I have ' + pluralize('cat', 2));
